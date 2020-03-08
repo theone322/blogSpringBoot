@@ -7,6 +7,4 @@ import com.liu.demo.entity.User;
 public interface UserRepository extends JpaRepository<User, String> {
 
 	
-	
-	
 }

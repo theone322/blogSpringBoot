@@ -11,9 +11,7 @@
 
 
 <body>
-	<div th:include="/headerFooter/header :: html">
-		
-	</div>
+	<div th:include="/headerFooter/header :: html"></div>
 
 	<div class="con">
 		<div class="re-container">
@@ -117,8 +115,8 @@
 								<a class="blog-title"
 									href="articleShow?articleID=${p.articleID}">${p.articleTitle}</a>
 								<div class="blog-con">
-									<%-- ${fn:substring(p.articleContent,0,100)} --%>
-								<%-- 	<c:choose>
+									<%-- ${fn:substring(p.articleContent,0,100)} --%> <%--
+									<c:choose>
 										<c:when test="${fn:contains(p.articleContent, '<') }">
   ${fn:replace(fn:replace(fn:substringBefore(p.articleContent, '<'),'&nbsp;', ''), searchCondtion, keywords)}
   <c:forEach
@@ -130,7 +128,8 @@
 										<c:otherwise>
    ${fn:replace(fn:substring(fn:replace(p.articleContent,'&nbsp;', ''), 0, 200), searchCondtion, keywords)}
   </c:otherwise>
-									</c:choose> --%>
+									</c:choose>
+									--%>
 									<c:choose>
 										<c:when test="${fn:contains(p.articleContent, '<') }">
   ${fn:replace(fn:replace(fn:substringBefore(p.articleContent, '<'),'&nbsp;', ''), searchCondtion, keywords)}
@@ -182,9 +181,7 @@
 		</div>
 
 
-	<div th:include="/headerFooter/footer :: html">
-		
-	</div>
+		<div th:include="/headerFooter/footer :: html"></div>
 	</div>
 
 

@@ -6,9 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.liu.demo.entity.Type;
-import com.liu.demo.entity.User;
 import com.liu.demo.service.TypeService;
-import com.liu.demo.service.UserService;
 
 @Controller
 public class AddType {

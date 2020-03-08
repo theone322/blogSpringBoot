@@ -9,14 +9,14 @@ public class User {
 	private String userID;
 	private String userPWD;
 	private String name;
-	private boolean gender;
+	private String gender;
 	private String birth;
 	private String phone;
 	private String email;
 	private String wechat;
 	private String introduction;
 	private String registerTime;
-	private boolean status;
+	private String status;
 
 	public User() {
 
@@ -46,11 +46,12 @@ public class User {
 		this.name = name;
 	}
 
-	public boolean isGender() {
+
+	public String getGender() {
 		return gender;
 	}
 
-	public void setGender(boolean gender) {
+	public void setGender(String gender) {
 		this.gender = gender;
 	}
 
@@ -102,11 +103,11 @@ public class User {
 		this.registerTime = registerTime;
 	}
 
-	public boolean isStatus() {
+	public String getStatus() {
 		return status;
 	}
 
-	public void setStatus(boolean status) {
+	public void setStatus(String status) {
 		this.status = status;
 	}
 
